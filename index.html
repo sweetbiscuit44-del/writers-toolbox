@@ -198,9 +198,11 @@
   </div>
   
   <footer>
-    Created with love by Sweet Biscuit44 <span class="heart">❤️</span><br>
-    One HTML file. Zero tracking. All heart.<br>
-    Your support keeps these tools free 💖
+    <p>Created with love by Sweet Biscuit44 <span class="heart">❤️</span><br>
+    One HTML file. Zero tracking. All heart.</p>
+    <p style="font-weight: 600; font-style: normal; margin-top: 10px; color: var(--primary);">
+        🔗 Visit my main website: <a href="https://sweetbiscuit44-del.github.io/sweet-biscuit44-home-page/" target="_blank" style="color: var(--accent); text-decoration: none;">SweetBiscuit44.com</a>
+    </p>
     <div class="paypal-button">
       <a href="https://www.paypal.com/paypalme/sweetbiscuit44" target="_blank">
         <i class="fab fa-paypal"></i> Support Sweet Biscuit44
@@ -242,8 +244,6 @@
     });
 
     // ===== READABILITY CHECKER (Flesch-Kincaid Grade Level) =====
-    // Note: Flesch-Kincaid Grade Level is often simplified; the original code used Flesch Reading Ease
-    // I'm keeping the original calculation from your code which appears to be a variation of Flesch Reading Ease score
     function checkReadability() {      
       const text = document.getElementById('readText').value;      
       if (!text.trim()) return document.getElementById('readResult').textContent = "Please enter text.";
